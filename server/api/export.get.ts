@@ -28,5 +28,5 @@ export default defineEventHandler(async (event) => {
     return [header, ...rows].join('\n')
   }
 
-  return { patients }
+  return { patients, exportedAt: new Date().toISOString() }
 })
