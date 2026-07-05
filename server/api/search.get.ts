@@ -1,5 +1,6 @@
 import { getDb } from '../utils/db'
 // Global search across patients, records, and prescriptions
+// v2: added total count
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
