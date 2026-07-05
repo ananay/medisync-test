@@ -1,6 +1,6 @@
 import { getDb } from '../utils/db'
 // Global search across patients, records, and prescriptions
-// v6: search across patients, records, and prescriptions
+// v7: search across patients, records, and prescriptions
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
