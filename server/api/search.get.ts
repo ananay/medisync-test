@@ -41,5 +41,6 @@ export default defineEventHandler(async (event) => {
       prescriptions,
     },
     query: term,
+    total: (patients as unknown[]).length + (records as unknown[]).length + (prescriptions as unknown[]).length,
   }
 })
