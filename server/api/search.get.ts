@@ -1,6 +1,6 @@
 import { getDb } from '../utils/db'
 // Global search across patients, records, and prescriptions
-// v3: added total count + timestamp
+// v4: added total count + timestamp
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
